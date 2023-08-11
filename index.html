@@ -53,7 +53,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[46.30180691360558,0.549124421211637],[47.321222007847645,3.32152391753923]]);
+        }).fitBounds([[46.30180691360558,0.6052191529033109],[47.321222007847645,3.2654291858475544]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -656,8 +656,8 @@
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/Secours Catholique.svg',
-            iconSize: [15.2, 15.2]
+            iconUrl: 'markers/Secours Catholique (rond).svg',
+            iconSize: [15.959999999999999, 15.959999999999999]
         }),
                 interactive: true,
             }
@@ -722,8 +722,8 @@
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/CROIX ROUGE.svg',
-            iconSize: [19.0, 19.0]
+            iconUrl: 'markers/croixrouge rond.svg',
+            iconSize: [15.959999999999999, 15.959999999999999]
         }),
                 interactive: true,
             }
@@ -854,7 +854,7 @@
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/Restos_du_coeur_Logo.svg',
+            iconUrl: 'markers/RDC (fond blanc).svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
@@ -916,7 +916,7 @@
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/secours populaire.svg',
+            iconUrl: 'markers/Secours Populaire Français.svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
@@ -979,12 +979,16 @@
         function style_Associationspartenaires36_14_0() {
             return {
                 pane: 'pane_Associationspartenaires36_14',
-        rotationAngle: 0.0,
-        rotationOrigin: 'center center',
-        icon: L.icon({
-            iconUrl: 'markers/Banque alimenatire sf.svg',
-            iconSize: [15.2, 15.2]
-        }),
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(255,127,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,127,0,1.0)',
                 interactive: true,
             }
         }
@@ -1003,7 +1007,7 @@
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_Associationspartenaires36_14_0(feature));
+                return L.circleMarker(latlng, style_Associationspartenaires36_14_0(feature));
             },
         });
         bounds_group.addLayer(layer_Associationspartenaires36_14);
@@ -1250,8 +1254,8 @@
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/BA fond blanc .svg',
-            iconSize: [41.8, 41.8]
+            iconUrl: 'markers/BA (entrepôt).svg',
+            iconSize: [22.799999999999997, 22.799999999999997]
         }),
                 interactive: true,
             }
